@@ -2,7 +2,11 @@
 <html>
 <head>
     <title>RWA-projekt</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucija Ilić">
+    <meta name="subject" content="Predmet - RWA">
+
     <style>
       body {
           margin: 0;
@@ -18,16 +22,12 @@
           color: black;
       }
 
-      #link {
-          display: flex;
-      }
-
       #link a {
-          color: black;
+          color: blue;
           text-decoration: none;
           margin-left: 20px;
         }
-      #link :hover{
+      #link a:hover{
           color: white;
       }
       #nav {
@@ -50,7 +50,28 @@
           padding: 160px;
           background-color: lightgreen;
           text-align: center;
+      }
+      
 
+      table {
+          width: 100%;
+          border-collapse: separate; 
+          border-spacing: 10px; 
+          border-color:blue;
+          margin-top: 10px;
+      }
+
+      th {
+          border: 2px solid lightskyblue;
+          padding: 8px;
+          text-align: center;
+          color: white;
+      }
+
+      td {
+          border: 1px solid rgb(0, 119, 255);
+          padding: 5px;
+          text-align: center;
       }
 
       #aside{
@@ -59,12 +80,20 @@
           padding: 10px;
           margin-left: 10px;
           text-align: center;
+          align-items: center;
       }
+
+      #aside a:hover{
+          color: white;
+      }
+
       footer {
           background-color:lightslategray;
           color:black;
-          text-align: center;
+          text-align:center;
+          align-items: center;
           padding: 10px;
+          display: flex 1;
       }
 
   </style>
@@ -72,30 +101,62 @@
 <body>
   <header>
     <div id="logo">
-      <h1>LOGO</h1>
+      <h1>HTML i CSS</h1>
+      <h2>Predmet - Razvoj Web Aplikacija</h2>
     </div>
     <div id="link">
-        <a href="#">Login</a>
-        <a href="#">Register</a>
+      <h3>Student - Lucija Ilić</h3>
+      <h4>Email : <a href="mailto:lucija.ilic@fsre.sum.ba">lucija.ilic@fsre.sum.ba</a></h4>
+      <h4>GitHub : <a href="https://github.com/lucijailic">Lucija Ilić</a></h4>
     </div>
 </header>
 <nav id="nav">
-   <a href="#">Početna</a>
-   <a href="#">O nama</a>
-   <a href="#">Kontakt</a>
+  <a href="#">Login</a>
+  <a href="#">Register</a>
 </nav>
 <div id="content">
   <article id="text">
-      <p>Korisnički dio stranice.</p>
+      <div>
+        <img src="FSRE.png" alt="FSRE">
+        <h1>RAČUNARSTVO</h1></p>
+        <table border="3px">
+          <tr>
+            <th>SEMESTAR</th>
+            <th>PREDMET</th>
+            <th>ECTS</th>
+          </tr>
+          <tr>
+            <td>V</td>
+            <td>Razvoj web aplikacija</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>V</td>
+            <td>Programiranje u Javi</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>V</td>
+            <td>Operacijski sustavi</td>
+            <td>6</td>
+          </tr>
+        </table>
+      </div>
   </article>
 
   <aside id="aside">
-      <p>Aside</p>
-      <p>Općenite informacije.</p>
+    <h3>STROJARSTVO</h3>
+    <a href="https://fsre.sum.ba/strojarstvo" >STROJARSTVO</a><br>
+    <h3>RAČUNARSTVO</h3>
+    <a href="https://fsre.sum.ba/racunarstvo" >RAČUNARSTVO</a><br>
+    <h3>ELEKTROTEHNIKA</h3>
+    <a href="https://fsre.sum.ba/elektrotehnika" >ELEKTROTEHNIKA</a><br>
   </aside>
 </div>
 <footer>
-  <p>Footer Navigation</p>
+  <h4>Linkovi za FSRE i SUM :</h4>
+  <a href="https://fsre.sum.ba/" >FSRE</a><br>
+  <a href="https://www.sum.ba/">Sveučilište u Mostaru</a>
 </footer>
 
 </body>
